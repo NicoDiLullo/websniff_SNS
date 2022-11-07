@@ -22,5 +22,11 @@
   background-color: var(--box_bg_color);
   text-align: center;
   padding: 5%;
-  font-size: 30px;
+  size: 100px;
+}
+
+.grid-item{
+  text-align: center;
+  padding: 5%;
+  size: 100px;
 }
