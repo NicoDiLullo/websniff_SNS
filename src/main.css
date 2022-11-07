@@ -14,6 +14,8 @@
   gap: .5%;
   background-color: var(--main_bg_color);
   padding: .5%;
+  width: 75%;
+  margin: auto;
 }
 
 .grid-container > div {
