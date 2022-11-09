@@ -1,7 +1,7 @@
 /* Main css file. Using css grid*/
 
 :root {
-    --main_bg_color: #3f6cff;
+    --main_bg_color: #97a1c1;
     --box_bg_color: #99b0fb;
 }
 
@@ -14,20 +14,13 @@
   margin: auto;
 }
 
-.grid-container > div {
-  background-color: var(--box_bg_color);
-  text-align: center;
-  padding: 5%;
-  size: 100px;
-}
-
 .grid-item{
   text-align: center;
   padding: 5%;
-  size: 100px;
+  size: 200px;
 }
 
-.block {
+.yes {
   display: block;
   width: 30%;
   border: none;
@@ -37,11 +30,27 @@
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  margin: auto;
 }
 
-.block:hover {
-  background-color: #ddd;
+.no {
+  display: block;
+  width: 30%;
+  border: none;
+  background-color: #bc0e0b;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.yes:hover {
+  background-color: #3da881;
+  color: black;
+}
+
+.no:hover {
+  background-color: #bb413f;
   color: black;
 }
 
