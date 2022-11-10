@@ -8,7 +8,7 @@ This is the main page of the site. It contains the form for the user to input th
 
 ## homePage.html
 
-A formatted list of every set of supernova images to be classified. Will populate with a typescript file to send/recieve data to and from the server.
+A formatted list of every set of supernova images to be classified. Will populate with a typescript file to recieve data from the server.
 
 ## CSS
 
