@@ -619,6 +619,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
+.bg-gray-5000 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
 
 .py-2 {
   padding-top: 0.5rem;
@@ -677,28 +681,98 @@ video {
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .hover\:bg-green-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .hover\:bg-gray-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/*
-.homeButton {
-  background-color: #4CAF50; /* Green */ /*
-  border: 50px;
-  justify-content:right;
-  align-items: center;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  width:100px;
-  font-size: 16px;
-}*/
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 131 121 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-pink-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 93 131 / var(--tw-bg-opacity));
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bg-pink-500 span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.bg-pink-500 span:after {
+  content: '\00bb';
+  position: center;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bg-pink-500:hover span {
+  padding-right: 25px;
+}
+
+.bg-pink-500:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/**/
+.bg-gray-500 span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.bg-gray-500 span:after {
+  content: '\00bb';
+  position: center;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bg-gray-500:hover span {
+  padding-right: 25px;
+}
+
+.bg-gray-500:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*FIX THIS*/
+.bg-gray-5000 span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.bg-gray-5000 span:after {
+  content: '\00ab';
+  position: center;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bg-gray-5000:hover span {
+  padding-right: 5px;
+}
+
+.bg-gray-5000:hover span:after {
+  opacity: 1;
+  right: 0;
+}
