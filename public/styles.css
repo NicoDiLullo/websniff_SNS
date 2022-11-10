@@ -770,6 +770,7 @@ video {
 
 .bg-gray-5000:hover span {
   padding-right: 5px;
+  padding-left: 20px;
 }
 
 .bg-gray-5000:hover span:after {
