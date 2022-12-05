@@ -758,6 +758,9 @@ video {
 }
 
 /*FIX THIS*/
+.home{
+  margin-left: 82px;
+}
 .bg-gray-5000 span {
   position: relative;
   transition: 0.5s;
