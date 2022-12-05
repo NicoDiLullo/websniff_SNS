@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "tailwindcss": "^3.2.2"
-  }, 
+  },
   "scripts": {
     "build-css": "npx tailwindcss -i src/styles.css -o public/styles.css --watch"
   }
