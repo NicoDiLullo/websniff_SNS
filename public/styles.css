@@ -626,6 +626,8 @@ video {
 .bg-gray-5000 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  text-align: center;
+
 }
 
 .py-2 {
@@ -741,7 +743,7 @@ video {
 
 .bg-gray-500 span:after {
   content: '\00bb';
-  position: center;
+  position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
@@ -764,11 +766,12 @@ video {
 .bg-gray-5000 span {
   position: relative;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .bg-gray-5000 span:after {
   content: '\00ab';
-  position: center;
+  position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
