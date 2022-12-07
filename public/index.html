@@ -52,7 +52,17 @@
       </button>
       <!--ND FIX: Add two more buttons: supernova info (link to YSEPZ), home page (on top? or maybe in the corner)-->
       <script>
-        
+        function myFunction(event) {
+          var x = event.key;
+
+          // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
+          if (x == "y" || x == "Y") { 
+            alert ("Supernova!!");
+          }
+          if (x == "n" || x == "N") { 
+            alert ("not a supernova!");
+          }
+        }
       </script>
 </body>
 </html>
