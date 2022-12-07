@@ -6,9 +6,9 @@
   <title>Websniff SNS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-300">
+<body class="bg-slate-300" onkeydown="hotKeys(event)">
   <div class="container grid mx-auto grid-cols-2 grid-rows-1 gap-4 pt-4"></div>
-  <button class="home bg-gray-5000 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+  <button class="home bg-gray-5000 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded" onClick="location.href='homePage.html'">
     <span></span>
     Home
   </button>
@@ -51,5 +51,24 @@
         <span></span>
       </button>
       <!--ND FIX: Add two more buttons: supernova info (link to YSEPZ), home page (on top? or maybe in the corner)-->
+      <script>
+        function hotKeys(event) {
+          var x = event.key;
+
+          // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
+          if (x == "y" || x == "Y") { 
+            alert ("Supernova!!");
+          }
+          if (x == "n" || x == "N") { 
+            alert ("not a supernova!");
+          }
+          if (event.keyCode == "37") { 
+            alert ("previous");
+          }
+          if (event.keyCode == "39") { 
+            alert ("next");
+          }
+        }
+      </script>
 </body>
 </html>
