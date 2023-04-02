@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Websniff SNS</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="newHomePage.html">
 </head>
 <body class="bg-slate-300" onkeydown="hotKeys(event)">
   <div class="container grid mx-auto grid-cols-2 grid-rows-1 gap-4 pt-4"></div>
@@ -68,6 +69,14 @@
           if (event.keyCode == "39") { 
             alert ("next");
           }
+          if(x == "i" || x == "I"){
+            var a = getSN();
+            alert (a);
+          }
+        }
+        function getSN(){
+          var toReturn = localStorage.getItem("inputValue");
+          return toReturn;
         }
       </script>
 </body>

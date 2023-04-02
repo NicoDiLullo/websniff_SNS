@@ -67,17 +67,13 @@
         }
         function getInfo(){
             var inputValue = document.getElementById("myInput").value;
+            localStorage.setItem("inputValue", inputValue);
             if(inputValue == ""){
-                alert ("Please enter a target")
-            }
-            else if(inputValue == "ur mom"){
-                alert ("Doing photometry on " + inputValue + " this might take a while")
+                alert ("Please enter a target");
             }
             else{
-                alert ("Running for " + inputValue);
-                var opened = window.open("");
-                var toWrite = "<html><head></head><body><button onClick=\"location.href='index.html'\">Click me</button></body></html>"
-                opened.document.write(toWrite);
+                alert ("Doing photometry on " + inputValue + " this might take a while");
+                window.location.href = "index.html";
             }
         }
     </script>
