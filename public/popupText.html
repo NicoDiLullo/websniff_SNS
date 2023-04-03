@@ -42,40 +42,19 @@
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
+.popup:hover .popuptext {
   visibility: visible;
-  -webkit-animation: fadeIn .5s;
-  animation: fadeIn .5s;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 </style>
 </head>
 <body style="text-align:center">
 
 <h2>Popup</h2>
 
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+<div class="popup">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">A Simple Popup!</span>
 </div>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
 <button onClick="location.href='homePage.html'">home</button>
 </body>
 </html>
