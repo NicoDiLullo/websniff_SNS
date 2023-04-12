@@ -695,12 +695,12 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
+/*
 .hover\:bg-gray-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+}*/
 
 .bg-pink-500 {
   --tw-bg-opacity: 1;
@@ -719,15 +719,16 @@ video {
 
 .bg-pink-500 span:after {
   content: '\00bb';
-  position: center;
+  position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
   transition: 0.5s;
 }
 
 .bg-pink-500:hover span {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .bg-pink-500:hover span:after {
@@ -745,13 +746,14 @@ video {
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
   transition: 0.5s;
 }
 
 .bg-gray-500:hover span {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .bg-gray-500:hover span:after {
@@ -766,26 +768,25 @@ video {
 .bg-gray-5000 span {
   position: relative;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .bg-gray-5000 span:after {
   content: '\00ab';
   position: absolute;
   opacity: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: -20px;
   transition: 0.5s;
 }
 
 .bg-gray-5000:hover span {
-  padding-right: 5px;
-  padding-left: 20px;
+  padding-right: 15px;
 }
 
 .bg-gray-5000:hover span:after {
   opacity: 1;
-  right: 0;
+  right: 5px;
 }
 .popup {
   position: relative;
