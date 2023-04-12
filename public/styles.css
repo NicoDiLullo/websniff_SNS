@@ -658,12 +658,12 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
+  line-height: .75;
 }
 
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -842,10 +842,11 @@ video {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 10% from the top and centered */
+  margin: 10% auto; /* 10% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
+  overflow: scroll;
 }
 
 /* The Close Button */
@@ -869,13 +870,19 @@ video {
   font-size: 42px;
 }
 .containerIm {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
+  padding: 0px;
+}
+
+.container img {
+  display: block;
+  margin: auto;
 }
 .justify-center {
   justify-content: center;
 }
 .items-center {
   align-items: center;
+}
+.gap-8{
+  gap: 2rem;
 }
