@@ -6,6 +6,7 @@
   <title>Websniff SNS</title>
   <link rel="stylesheet" href="styles.css">
   <link href="newHomePage.html">
+  <link href="modal.js">
   <script>
     var headingText = "Results for ";
     headingText += getSN();
@@ -24,10 +25,19 @@
     <span></span>
     Home
   </button>
-  <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+  <button id="snInfo" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
     Supernova Information
     <span></span>
   </button>
+  <!-- The Modal -->
+  <div id="snInfoModal" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <h4>This is a big white box</h4>
+        <p>Some text inside the modal..</p>
+      </div>
+  </div>
   <!-- OR <input type="image" name="Name of image button" src="../assets/homeImage.png" border=100px alt="text">  -->
   </div>
   <div class="flex flex-col">
@@ -83,6 +93,20 @@
           if(x == "i" || x == "I"){
             var a = getSN();
             alert (a);
+          }
+        }
+        var modal = document.getElementById("snInfoModal");
+        var btn = document.getElementById("snInfo");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
           }
         }
       </script>
