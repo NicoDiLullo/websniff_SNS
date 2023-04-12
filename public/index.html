@@ -34,8 +34,12 @@
   <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-        <h4>This is a big white box</h4>
-        <p>Some text inside the modal..</p>
+        <h2 class="h2">Supernova Information</h2>
+        <p><strong>RA: </strong> </p>
+        <p><strong>Dec: </strong> </p>
+        <p><strong>Magnitude: </strong> </p>
+        <p><strong>Days since discovery: </strong> </p> <!-- Discovery date?-->
+        <p><strong>Redshift: </strong></p>
       </div>
   </div>
   <!-- OR <input type="image" name="Name of image button" src="../assets/homeImage.png" border=100px alt="text">  -->
@@ -44,7 +48,7 @@
     <div pt-6>
       <h1 id="myHeading" class="ont-medium leading-tight text-5xl mt-0 mb-2 text-slate-700 text-center pt-6">Websniff SNS Labeling</h1>
     </div>
-
+<!--
     <div class="container grid mx-auto grid-cols-3">
       <img class="w-96 h-96" src="../assets/Pre.png">
       <img class="w-96 h-96" src="../assets/Post.png">
@@ -56,6 +60,21 @@
         <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Post</p>
         <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Difference</p>
     </div>
+-->
+<div class="containerIm grid mx-auto grid-cols-3 flex justify-center">
+  <div class="flex flex-col items-center">
+    <img class="w-96 h-96" src="../assets/Pre.png">
+    <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Pre</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <img class="w-96 h-96" src="../assets/Post.png">
+    <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Post</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <img class="w-96 h-96" src="../assets/Difference.png">
+    <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Difference</p>
+  </div>
+</div>
 
     <div class="container grid mx-auto grid-cols-2 grid-rows-2 gap-4 pt-4">
       <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">

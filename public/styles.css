@@ -842,10 +842,10 @@ video {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto; /* 10% from the top and centered */
+  margin: 15% auto; /* 10% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -861,4 +861,21 @@ video {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 42px;
+}
+.containerIm {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
 }
