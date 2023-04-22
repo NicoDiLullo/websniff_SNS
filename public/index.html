@@ -8,6 +8,9 @@
   <link href="newHomePage.html">
   <link href="modal.js">
   <script>
+    
+    //update the the header based on the input
+
     var headingText = "Results for ";
     headingText += getSN();
     window.onload = function() {
@@ -19,6 +22,9 @@
     }
   </script>
 </head>
+
+<!--Background, home button, SN info button-->
+
 <body class="bg-slate-300" onkeydown="hotKeys(event)">
   <div class="container grid mx-auto grid-cols-2 grid-rows-1 gap-4 pt-4"></div>
   <button class="home hover:home text-white font-bold py-2 px-4 rounded" onClick="location.href='homePage.html'">
@@ -29,9 +35,13 @@
     Supernova Information
     <span></span>
   </button>
+  
   <!-- The Modal -->
+
   <div id="snInfoModal" class="modal">
+
   <!-- Modal content -->
+
     <div class="modal-content">
       <span class="close">&times;</span>
         <h2 class="h2">Supernova Information</h2>
@@ -54,7 +64,8 @@
     <div pt-6>
       <h1 id="myHeading" class="ont-medium leading-tight text-5xl mt-0 mb-2 text-slate-700 text-center pt-6">Websniff SNS Labeling</h1>
     </div>
-<!--
+    
+<!-- Previous method. Keeping in case of bugs.
     <div class="container grid mx-auto grid-cols-3">
       <img class="w-96 h-96" src="../assets/Pre.png">
       <img class="w-96 h-96" src="../assets/Post.png">
@@ -67,6 +78,8 @@
         <p class="ont-medium leading-tight text-lg mt-0 mb-2 text-slate-700 text-center pt-3">Difference</p>
     </div>
 -->
+
+<!--Images-->
 
 <div class="containerIm grid mx-auto grid-cols-3 flex gap-8 justify-center">
   <div class="flex flex-col items-center">
@@ -83,6 +96,8 @@
   </div>
 </div>
 
+<!--LikelySN, notSN, prev, next buttons-->
+
     <div class="container grid mx-auto grid-cols-2 grid-rows-2 gap-4 pt-4">
       <button class="notSN hover:notSN text-white font-bold py-2 px-4 rounded">
         Likely Not a Supernova
@@ -98,8 +113,13 @@
         Next Candidate
         <span></span>
       </button>
-      <!--ND FIX: Add two more buttons: supernova info (link to YSEPZ), home page (on top? or maybe in the corner)-->
+
+      <!--JavaScript-->
+
       <script>
+        
+        //hot keys
+
         function hotKeys(event) {
           var x = event.key;
 
@@ -121,6 +141,9 @@
             alert (a);
           }
         }
+        
+        //Modal
+
         var modal = document.getElementById("snInfoModal");
         var btn = document.getElementById("snInfo");
         var span = document.getElementsByClassName("close")[0];
