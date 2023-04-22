@@ -21,11 +21,11 @@
 </head>
 <body class="bg-slate-300" onkeydown="hotKeys(event)">
   <div class="container grid mx-auto grid-cols-2 grid-rows-1 gap-4 pt-4"></div>
-  <button class="home bg-gray-5000 hover:bg-gray-5000 text-white font-bold py-2 px-4 rounded" onClick="location.href='homePage.html'">
+  <button class="home hover:home text-white font-bold py-2 px-4 rounded" onClick="location.href='homePage.html'">
     <span></span>
     Home
   </button>
-  <button id="snInfo" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+  <button id="snInfo" class="snInfo hover:snInfo text-white font-bold py-2 px-4 rounded">
     Supernova Information
     <span></span>
   </button>
@@ -84,17 +84,17 @@
 </div>
 
     <div class="container grid mx-auto grid-cols-2 grid-rows-2 gap-4 pt-4">
-      <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+      <button class="notSN hover:notSN text-white font-bold py-2 px-4 rounded">
         Likely Not a Supernova
         </button>
-      <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+      <button class="likelySN hover:likelySN text-white font-bold py-2 px-4 rounded">
         Likely a Supernova
       </button>
-      <button class="bg-gray-5000 hover:bg-gray-5000 text-white font-bold py-2 px-4 rounded">
+      <button class="prevSN hover:prevSN text-white font-bold py-2 px-4 rounded">
         <span></span>
         Previous Candidate
       </button>
-      <button class="bg-gray-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+      <button class="nextSN hover:nextSN text-white font-bold py-2 px-4 rounded">
         Next Candidate
         <span></span>
       </button>
